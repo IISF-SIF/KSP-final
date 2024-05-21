@@ -1,0 +1,148 @@
+/* DataAnalytics.css */
+body {
+  background-color: #f8f9fa; /* Light grey background for contrast */
+  color: black; /* Deep purple text color for readability */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.list{
+  margin-left:20px;
+  
+}
+.container1{
+  color:black;
+  display:flex;
+  
+  
+  height:400px;
+  width:90%;
+  flex-direction:row;
+}
+.title{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:center;
+  
+}
+.year{
+  font-size:110px;
+  font-weight: 400;
+  margin-left:100px;
+  
+  margin-top:70px;
+}
+.subtext{
+font-size:20px;
+  margin-left:90px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  /* word-spacing: 6px; */
+}
+.container2{
+  display:flex;
+  flex-direction:row;
+  margin-top:200px;
+}
+h1 {
+  color: #4b0082;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.chart-container {
+  background-color: #ffffff; /* White background for the charts */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+.headings{
+  font-size:25px;
+  
+}
+.headings2{
+  font-size:25px;
+  margin-left:75px;
+  margin-bottom:50px;
+}
+
+.bar{
+  margin-left:-140px;
+}
+.pie{
+  margin-left:-50px;
+  
+}
+.pie CustomPieChart{
+  margin-top:-50px;
+}
+/* Individual chart styles */
+.BarChart, .PieChart, .LineChart, .Heatmap {
+  margin: 20px auto;
+}
+.districtbar{
+  margin-left:-20px
+}
+.headings{
+  margin-left:60px;
+}
+/* Custom tooltip styling */
+.custom-tooltip {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+/* Legend styling */
+.recharts-legend-wrapper {
+  padding: 10px;
+}
+
+/* Color scheme for charts */
+.recharts-bar-rectangle {
+  fill: #800080; /* Purple color for bars */
+}
+
+.recharts-line .recharts-curve {
+  stroke: #800080; /* Purple color for line chart */
+}
+
+.recharts-pie-sector {
+  stroke: none; /* Remove stroke from pie chart sectors */
+}
+
+  .para2{
+    margin-left: 75px;
+    margin-top:-40px;
+    margin-bottom:60px;
+    font-size:18px;
+    color:rgb(53, 53, 53);
+  }
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .chart-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .BarChart, .PieChart, .LineChart, .Heatmap {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.analytics-container {
+  display: grid;
+  grid-gap: 20px;
+  padding: 20px;
+  background-color: white;
+  color: purple;
+}
+
+.chart-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

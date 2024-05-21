@@ -23,13 +23,13 @@ const CustomLineChart = ({ data }) => {
     <div>
       <div className="title">Accidents by Time of Day</div>
       <LineChart
-        width={1150}
+        width={1050}
         height={450}
         data={data}
         margin={{
           top: 20,
           right: 30,
-          left: 200,
+          left: 100,
           bottom: 20,
         }}
       >
