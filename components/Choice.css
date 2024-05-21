@@ -1,0 +1,56 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+/* Global CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color:black;
+}
+
+body {
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    height: 100vh;
+    
+}
+
+/* Choice Component CSS */
+.choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: auto;
+    
+}
+
+.admin,
+.user {
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+    font-size: 2em;
+    font-weight: 600;
+    height: 200px;
+    width: 400px;
+    border: 2px solid #c6c6c6;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Add cursor pointer for buttons */
+    background-color: white; /* Change background color for buttons */
+}
+.admin:hover,
+.user:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+    transform: scale(1.05); /* Increase size on hover */
+}
+.admin {
+    margin-left: 200px;
+}
+
+.user {
+    margin-right: 200px;
+}

@@ -1,0 +1,6 @@
+.title {
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 20px; /* Adjust the value as needed to move the title up */
+  text-align: center; /* Optional: Center align the title */
+}

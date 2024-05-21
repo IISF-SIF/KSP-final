@@ -1,0 +1,80 @@
+.navbar {
+  height:75px;
+  background-color: #efefef; /* white background */
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle box shadow */
+}
+
+.navbarContainer {
+  max-width: 1200px; /* maximum width for better responsiveness */
+  margin: 0 auto; /* center the content */
+}
+
+.navbarLinks {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+.navbarLinks > :global(a) {
+  margin: 0 1.5rem;
+  font-weight: 400;
+  color: #3b0063; /* dark gray text color */
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease, font-weight 0.3s ease;
+  position: relative; /* Add position relative for pseudo-element positioning */
+}
+
+.navbarLinks > :global(a):hover {
+  color: #7a17a4; /* text color on hover */
+   /* make the font bold on hover */
+}
+
+.navbarLinks > :global(a):hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%; /* Adjust the left position */
+  width: 80%;
+  height: 2px; /* Underline height */
+  background-color: #9745bb; /* Underline color */
+}
+
+.active::after,
+.navLink:active::after { /* Add underline effect for active link and link after click */
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Underline height */
+  background-color: #9745bb; /* Underline color */
+}
+
+
+.chatbot-link {
+  margin-left: 400px;
+}
+
+.chatbotBtn {
+  position:absolute;
+  top:20px;
+  margin-left:1250px;
+  background-color: darkviolet;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius:20px; /* Adjust font size */
+}
+
+.chatbotBtn:hover {
+  background-color: rgb(168, 36, 225);
+  transform: scale(1.1); /* Corrected syntax */
+}
