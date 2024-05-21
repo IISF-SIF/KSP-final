@@ -79,6 +79,7 @@ body{
   
   .message.bot {
     display:flex;
+    flex-direction: column;
     align-self: flex-start; /* Align bot messages to the left */
     background-color: #f4f4f9;
   }
